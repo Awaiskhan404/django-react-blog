@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+django-rest-auth = {extras = ["with-social"]}
+djangorestframework-jwt = "*"
+django-allauth = "*"
+openapi-codec = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"

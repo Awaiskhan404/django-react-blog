@@ -1,0 +1,33 @@
+.Item {
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    padding-right: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.Item.active {
+    color: rgb(0, 183, 255);
+}
+
+.Item:hover {
+    color: rgb(0, 183, 255);
+}
+
+.Item::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.Item:hover:after {
+    width: 100%;
+    background: rgb(0, 183, 255);
+}

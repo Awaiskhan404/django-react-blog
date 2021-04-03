@@ -1,0 +1,8 @@
+.UnorderList {
+    display: flex;
+    flex-flow: column;
+}
+
+.NavigationItems {
+    float: right;
+}
